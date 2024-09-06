@@ -677,6 +677,7 @@ p {
     padding-left: 40px;
     padding-right: 20px;
     padding-bottom: 50px;
+    height: 160px;
   }
 
   .main-title {
@@ -695,7 +696,7 @@ p {
   }
 
   .two-column-section h2 {
-    width: 50%;
+    width: 95%;
   }
 
   .two-column-section p {
@@ -723,6 +724,10 @@ p {
 
   .feature-section.left {
     flex-direction: column;
+  }
+
+  .feature-section img {
+    height: 480px !important;
   }
 
   .content {
