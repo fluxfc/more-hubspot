@@ -196,7 +196,7 @@ li {
 .banner {
   position: relative;
   height: 400px;
-  background: url('./images/see-image-05.jpg') no-repeat center center;
+  background: url('.../images/see-image-05.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
