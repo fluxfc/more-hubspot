@@ -20,9 +20,11 @@
                 <img class="link-icon" alt="" src="./images/more-logo.svg">
             </div>
             <div class="enquiry-button">
-                <div class="enquire-wrapper">
-                    <div class="enquire">Enquire</div>
-                </div>
+                <a style="text-decoration: none; color: #fff;" href="#enquire">
+                    <div class="enquire-wrapper">
+                            <div class="enquire">Enquire</div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -37,7 +39,7 @@
                 <div class="main-description">MORE Family Collection Hotels and Lodges are found in Southern
                     Africa's best leisure destinations. Now you can SeeMORE+, for less.
                 </div>
-                <a href="#" class="cta-button">Learn More</a>
+                <a href="#explore" class="cta-button">Learn More</a>
             </div>
         </div>
 
@@ -98,7 +100,7 @@
 
 
     <!-- Image-Right Section -->
-    <section>
+    <section id="explore">
         <div class="explore-heeading-container" >
             <h2 class="explore-heeading">Explore the properties</h2>
         </div>
@@ -114,7 +116,7 @@
                     feel like yours alone – uninterrupted.
                     All that is left to do is enjoy every moment of game drives, bush walks, and treatments at the spa.
                 </p>
-                <a href="#" class="enquire-btn">ENQUIRE NOW</a>
+                <a href="#enquire" class="enquire-btn">ENQUIRE NOW</a>
             </div>
             <div class="image">
                 <img src="./images/see-image-02.jpg" alt="Placeholder Image">
@@ -137,7 +139,7 @@
                 for nature - the architecture planned accordingly around a well-established large old leadwood tree.
             </p>
             <br>
-            <a href="#" class="enquire-btn">ENQUIRE NOW</a>
+            <a href="#enquire" class="enquire-btn">ENQUIRE NOW</a>
         </div>
     </section>
 
@@ -151,12 +153,12 @@
                 This luxurious three-bedroom Residence in Cape Town has Table Mountain as its majestic backdrop. Newly
                 constructed in 2023, this exclusive-use property is your stylish home away from home, perfect for time
                 spent with friends or family. The modern décor is reflected in beautiful greens, classic black and
-                white, and touches of gold, in a similar them to our Cape Cadogan Boutique Hotel. Self-contained, it‘s
+                white, and touches of gold, in a similar theme to our Cape Cadogan Boutique Hotel. Self-contained, it‘s
                 designed to accommodate six individuals comfortably, with welcoming living spaces, including an outdoor
                 deck and pool. Your every need is attended to by your dedicated residence butler and a 24-hour
                 concierge, ready to craft your ideal itinerary.
             </p>
-            <a href="#" class="enquire-btn">ENQUIRE NOW</a>
+            <a href="#enquire" class="enquire-btn">ENQUIRE NOW</a>
         </div>
         <div class="image">
             <img src="./images/see-image-04.jpg" alt="Placeholder Image">
@@ -188,11 +190,11 @@
 
     <!-- CTA Banner Section -->
 
-    <section class="banner">
+    <section class="banner" style="background-position: center; background-size: cover; background-image: url('./images/BookNow.webp');">
         <div class="banner-container">
             <div class="banner-content">
                 <h2>Book SeeMORE+ promotion now!</h2>
-                <a href="#" class="cta-button">Learn More</a>
+                <a href="#enquire" class="cta-button">Learn More</a>
             </div>
         </div>
     </section>
@@ -335,53 +337,53 @@
     </section>
 
     <!-- Enquiry Form -->
-    <section class="more-form">
+    <section class="more-form" id="enquire">
         <div class="form-container">
             <h2>Enquire Now</h2>
             <form>
                 <div class="form-row">
                     <div class="form-column">
-                        <label for="firstName">First Name:</label>
+                        <label for="firstName">First Name</label>
                         <input type="text" id="firstName" name="firstName" required>
                     </div>
                     <div class="form-column">
-                        <label for="lastName">Last Name:</label>
+                        <label for="lastName">Last Name</label>
                         <input type="text" id="lastName" name="lastName" required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-column">
-                        <label for="email">Email Address:</label>
+                        <label for="email">Email Address</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-column">
-                        <label for="phoneNumber">Phone Number:</label>
+                        <label for="phoneNumber">Phone Number</label>
                         <input type="tel" id="phoneNumber" name="phoneNumber" required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-column">
-                        <label for="arrivalDate">Arrival Date:</label>
+                        <label for="arrivalDate">Arrival Date</label>
                         <input type="date" id="arrivalDate" name="arrivalDate" required>
                     </div>
                     <div class="form-column">
-                        <label for="departureDate">Departure Date:</label>
+                        <label for="departureDate">Departure Date</label>
                         <input type="date" id="departureDate" name="departureDate" required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-column">
-                        <label for="numberOfAdults">Number of Adults:</label>
+                        <label for="numberOfAdults">Number of Adults</label>
                         <select id="numberOfAdults" name="numberOfAdults">
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
                     </div>
                     <div class="form-column">
-                        <label for="numberOfChildren">Number of Children:</label>
+                        <label for="numberOfChildren">Number of Children</label>
                         <select id="numberOfChildren" name="numberOfChildren">
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -391,7 +393,7 @@
 
                 <div class="form-row">
                     <div class="form-column">
-                        <label for="interestedProperty">Interested Property:</label><br>
+                        <label for="interestedProperty">Interested Property</label><br>
                         <input type="radio" id="lionSandsIvoryLodge" name="interestedProperty"
                             value="Lion Sands Ivory Lodge">
                         <label class="radio-label" for="lionSandsIvoryLodge">Lion Sands Ivory Lodge</label><br>
