@@ -17,6 +17,24 @@ h3 {
   height: 19px;
 }
 
+.explore-heeading-container{
+    width:1200px;
+    margin:auto;
+    height:150px;
+}
+
+.explore-heeading{
+        width: 100%;
+        position: relative;
+        font-size: 80px;
+        line-height: 107.52%;
+        display: inline-block;
+        font-family: 'Playfair Display';
+        color: #83715c;
+        text-align: left;
+  }
+
+
 /* Form */
 
 .more-form {
@@ -433,7 +451,7 @@ p {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  width: 1440px;
+  width: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -578,7 +596,7 @@ p {
 /* Hero Section */
 
 .hero-bg {
-  width: 1440px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -777,4 +795,31 @@ p {
   .form-container {
     padding: 40px;
   }
+
+  .explore-heeading h2{
+    width: 100%;
+    font-size: 55px;
+    line-height:60px;
+    line-height: 107.52%;
+    font-family: 'Playfair Display';
+    color: #83715c;
+    text-align: left;
+ 
+}
+
+.explore-heeading{
+    width: 90%;
+    position: relative;
+    font-size: 55px;
+    line-height:60px;
+    line-height: 107.52%;
+    font-family: 'Playfair Display';
+    color: #83715c;
+    text-align: left;
+    display:block;
+    padding-bottom:40px;
+}
+.explore-heeading-container {
+    width: 100%;
+}
 }
