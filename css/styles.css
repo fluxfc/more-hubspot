@@ -17,13 +17,13 @@ h3 {
   height: 19px;
 }
 
-.explore-heeading-container{
+.explore-heading-container{
     width:1200px;
     margin:auto;
     height:150px;
 }
 
-.explore-heeading{
+.explore-heading{
         width: 100%;
         position: relative;
         font-size: 80px;
@@ -122,10 +122,9 @@ input[type='radio'] {
   align-items: center;
   justify-content: center;
   padding: 18px 36px;
-  padding-bottom: 40px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 12px;
   color: #262633;
   font-family: Raleway;
   transition: background-color 0.3s ease;
@@ -602,6 +601,7 @@ p {
 .hero-bg {
   width: 100%;
   object-fit: cover;
+  height: 95vh;
 }
 
 .image-placeholder-child {
@@ -878,6 +878,7 @@ p {
 @media (min-width: 768px) {
   .two-column-section {
     flex-wrap: nowrap;
+    width: 90%;
   }
 }
 
@@ -905,6 +906,7 @@ p {
     padding-left: 40px;
     padding-right: 20px;
     padding-bottom: 50px;
+    height: 225px;
   }
 
   .main-title {
@@ -923,7 +925,7 @@ p {
   }
 
   .two-column-section h2 {
-    width: 50%;
+    width: 95%;
   }
 
   .two-column-section p {
@@ -951,6 +953,10 @@ p {
 
   .feature-section.left {
     flex-direction: column;
+  }
+
+  .feature-section img {
+    height: 480px !important;
   }
 
   .content {
@@ -1024,7 +1030,7 @@ p {
     padding: 40px;
   }
 
-  .explore-heeading h2{
+  .explore-heading h2  {
     width: 100%;
     font-size: 55px;
     line-height:60px;
@@ -1032,8 +1038,6 @@ p {
     font-family: 'Playfair Display';
     color: #83715c;
     text-align: left;
- 
-}
 
 .explore-heeading{
     width: 90%;
@@ -1068,6 +1072,9 @@ h1.main-title.title-image{
 .column.column-icons {
     margin: 20px;
     margin-top:0;
+  
+    .line-break {
+    display: none;
+  }
 
-}
 }
