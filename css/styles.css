@@ -248,7 +248,6 @@ li {
   width: 221px;
   position: relative;
   background-color: #fff;
-  border: 0.5px solid #fff;
   box-sizing: border-box;
   text-decoration: none;
   height: 51px;
@@ -266,10 +265,15 @@ li {
 }
 
 .cta-button:hover {
-  background-color: #262633;
-  border: 1px solid #fff;
-  color: #fff;
+    background-color: transparent;
+    color: #fff;
+    border-left: 2px solid #ffff;
+
 }
+
+.experience .cta-button{
+    margin-top:15px;
+  }
 
 /* Testimonial */
 .testimonial-section {
@@ -437,6 +441,7 @@ p {
   color: #262633;
   text-align: left;
   display: inline-block;
+  line-height: 158.02%;
   margin: 0;
   padding-top: 10px;
 }
@@ -512,7 +517,21 @@ p {
   align-items: center;
   justify-content: flex-start;
   padding: 0px 45px;
-  box-sizing: border-box;
+  font-size: 12px;
+  letter-spacing: 1.8px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: Raleway;
+  color: #fff;
+  text-align: center;
+  text-decoration:none;
+}
+
+.enquiry-button:hover{
+    background-color: transparent;
+    color: #262633;
+    border-left: 2px solid #262633;
 }
 
 /* Featured CSS */
@@ -525,6 +544,10 @@ p {
   gap: 20px;
   padding-top: 80px;
   margin: auto;
+}
+
+.two-column-section p {
+    padding-bottom:18px;
 }
 
 .column {
@@ -646,6 +669,8 @@ p {
   margin-top: -60px;
 }
 
+
+
 .main-description {
   width: 527px;
   position: relative;
@@ -655,7 +680,22 @@ p {
   line-height: 158.02%;
   font-family: Raleway;
   display: inline-block;
+  color:white;
+  }
+
+.main-description.experience{
+  margin-top:-60px;
 }
+  
+.main-description.experience p {
+      position: relative;
+      font-size: 16px;
+      line-height: 158.02%;
+      font-family: Raleway;
+      display: inline-block;
+      color:white;
+ }
+  
 
 .image-layout {
     display: flex;
@@ -909,6 +949,10 @@ p {
     height: 225px;
   }
 
+  .blue-container.mobile{
+    height:410px;
+  }
+
   .main-title {
     margin: 0;
     font-size: 55px;
@@ -918,6 +962,10 @@ p {
 
   .main-description {
     width: 100%;
+  }
+
+  .main-description.experience{
+    margin-top:-20px;
   }
 
   .main-container {
@@ -1038,6 +1086,11 @@ p {
     font-family: 'Playfair Display';
     color: #83715c;
     text-align: left;
+}
+
+.accordion-section{
+    padding-top:0;
+}
 
 .explore-heeading{
     width: 90%;
@@ -1055,6 +1108,11 @@ p {
     width: 100%;
 }
 
+.icon-section .icon{
+    width: 70px;
+    height: 70px;
+}
+
 .column{
     padding:0;
 }
@@ -1068,6 +1126,9 @@ h1.main-title.title-image{
 .column.column-text {
     margin: 40px;
     margin-bottom:0;
+}
+.two-column-section .experience h2{
+  font-size:38px;
 }
 .column.column-icons {
     margin: 20px;
