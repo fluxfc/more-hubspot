@@ -416,7 +416,9 @@ blockquote {
 }
 
 .enquire-btn:hover {
-  background-color: #444;
+    background-color: transparent;
+    color: #262633;
+    border-left: 2px solid #262633;
 }
 
 .image img {
