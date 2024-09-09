@@ -1080,21 +1080,15 @@ p {
     padding: 40px;
   }
 
-  .explore-heading h2  {
-    width: 100%;
-    font-size: 55px;
-    line-height:60px;
-    line-height: 107.52%;
-    font-family: 'Playfair Display';
-    color: #83715c;
-    text-align: left;
-}
+ .explore-heading-container{
+    width:100%;
+ }
 
 .accordion-section{
     padding-top:0;
 }
 
-.explore-heeading{
+.explore-heading{
     width: 90%;
     position: relative;
     font-size: 55px;
@@ -1105,6 +1099,7 @@ p {
     text-align: left;
     display:block;
     padding-bottom:40px;
+    padding-left:30px;
 }
 .explore-heeading-container {
     width: 100%;
@@ -1113,6 +1108,10 @@ p {
 .icon-section .icon{
     width: 70px;
     height: 70px;
+}
+
+.icon-section{
+    width:120px;
 }
 
 .column{
@@ -1136,7 +1135,7 @@ h1.main-title.title-image{
     margin: 20px;
     margin-top:0;
   
-    .line-break {
+.line-break {
     display: none;
   }
 
