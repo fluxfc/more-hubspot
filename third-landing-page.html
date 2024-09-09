@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Playfair Display:ital,wght@0,700;1,400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" />
     <script src="./js/script.js"></script>
+    <title></title>
 </head>
 
 <body>
@@ -19,417 +20,488 @@
             <div class="logo">
                 <img class="link-icon" alt="" src="./images/more-logo.svg">
             </div>
-            <div class="enquiry-button">
-                <div class="enquire-wrapper">
-                    <div class="enquire">Enquire</div>
-                </div>
-            </div>
+            <a href="#enquire" class="enquiry-button">Enquire</a>
         </div>
     </section>
 
     <!-- Main Hero Section-->
 
     <section class="main-section">
-        <img class="hero-bg" alt="" src="./images/see-hero-01.jpg">
-        <div class="blue-container">
+        <img class="hero-bg" alt="" src="./images/stay-3-01.jpg">
+        <div class="blue-container mobile">
             <div class="main-container">
-                <h1 class="main-title">Stay 3 nights at any <br> property and get 50% <br>off for one </h1>
-                <div class="main-description">MORE Family Collection Hotels and Lodges are found in Southern
-                    Africa's best leisure destinations. Now you can SeeMORE+, for less.
+                <h1 class="main-title title-image"> <img src="./images/experience-subliner.svg" alt="">Book 3 nights and
+                    only <br> pay for 2 </h1>
+                <div class="main-title-area">
+                    <div class="main-description experience">
+                        <p>Oct 2024 - April 2025 | Oct 2025 - April 2026 </p>
+                        <p><br>MORE Family Collection Hotels and Lodges are found in Southern Africa's best leisure
+                            destinations. Now you can ExperienceMORE, for less.</p>
+                        <a href="#enquire" class="cta-button">Make A Booking</a>
+                    </div>
                 </div>
-                <a href="#" class="cta-button">Learn More</a>
             </div>
-        </div>
 
     </section>
 
     <!-- Feature Icons Section -->
 
     <section class="two-column-section">
-        <div class="column column-text">
-            <h2>LoveMORE</h2>
+        <div class="column column-text experience">
+            <h2>ExperienceMORE</h2>
 
-            <p><strong> Experience Iconic Natural Wonders</strong></p><br>
+            <p><strong> Immerse yourself in the breathtaking beauty of the African bushs</strong></p><br>
 
-            <p><strong> Embark on Romantic Safari Adventures</strong></p></br>
+            <p><strong> Encounter the Big 5 and other breathtaking wildlife up close</strong></p></br>
 
-            <p> <strong>Relax on Pristine Beaches</strong></p><br>
+            <p> <strong>Relax and unwind in luxurious accommodations</strong></p><br>
 
-            <p> <strong>Immerse Yourself in Bustling City Life</strong></p><br>
+            <p> <strong>Explore Cape Town's iconic landmarks, delicious food, diverse cultures</strong></p><br>
             <p>
-                Escape to the African bush with our exclusive 3+2 offer! Book a 3-night stay at either Ivory Lodge or
-                Monwana Game Lodge and enjoy two nights free at Cape Cadogan in a Luxury Room. Immerse yourself in the
-                wild beauty of South Africa with Lion Sands Tinga, Narina Lodge, or Marataba Luxury Lodge. Book now and
-                experience the ultimate safari adventure.
+                Experience the best of Southern Africa with our ExperienceMORE Promotion. Combine city chic with
+                unforgettable wildlife encounters.
             </p>
         </div>
         <div class="column column-icons">
             <div class="icon-container">
                 <div class="icon-section">
                     <div class="icon">
-                        <img src="./images/binoculars 1.png" alt="binoculars">
+                        <img src="./images/love-icon-01.svg" alt="binoculars">
                     </div>
-                    <h3>BIG 5 SAFARIS</h3>
+                    <h3>Limited-time Offer</h3>
                 </div>
                 <div class="icon-section">
                     <div class="icon">
-                        <img src="./images/unlocked 1.png" alt="plane">
+                        <img src="./images/icon-curated-journeys 1.svg" alt="plane">
                     </div>
-                    <h3>SEAMLESS ACCESS</h3>
+                    <h3>A Diverse Collection of Properties</h3>
                 </div>
                 <div class="icon-section">
                     <div class="icon">
-                        <img src="./images/check 1.png" alt="star">
+                        <img src="./images/icon-residences 1.svg" alt="star">
                     </div>
-                    <h3>LUXURY<br>ACCOMMODATION</h3>
+                    <h3>Untouched Destinations</h3>
                 </div>
             </div>
         </div>
         </div>
     </section>
 
-    <!-- More Lodges Tab -->
-    <main>
-        <section class="tab__container">
-            <h2 class="tab-section-heading">MORE Family Collection Lodges in this Promotion</h2>
-            <div class="tab__title">
-                <button class="tab__button tab_button-active" onclick="openTab('one', this)">Lion Sands Narina</button>
-                <button class="tab__button" onclick="openTab('two', this)">Lion Sands River</button>
-                <button class="tab__button" onclick="openTab('three', this)">Lion Sands Tinga</button>
-                <button class="tab__button" onclick="openTab('four', this)">Lion Sands Ivory</button>
-                <button class="tab__button" onclick="openTab('five', this)">Monwana Game</button>
-                <button class="tab__button" onclick="openTab('six', this)">Marataba Mountain</button>
-                <button class="tab__button" onclick="openTab('seven', this)">Marataba Safar</button>
+    <!-- Lodges Section -->
+    <section class="tab-container" id="lodges">
+        <div class="tab-heading">
+            <h2>MORE Family Collection Lodges in this Promotion</h2>
+        </div>
+        <div class="tabs">
+            <div class="tab-headers">
+                <div class="tab-header active" data-tab="lodges-tab1">Lion Sands Narina</div>
+                <div class="tab-header" data-tab="lodges-tab2">Lion Sands River</div>
+                <div class="tab-header" data-tab="lodges-tab3">Lion Sands Tinga</div>
+                <div class="tab-header" data-tab="lodges-tab4">Lion Sands Ivory</div>
+                <div class="tab-header" data-tab="lodges-tab5">Monwana Game</div>
+                <div class="tab-header" data-tab="lodges-tab6">Marataba Mountain</div>
+                <div class="tab-header" data-tab="lodges-tab7">Marataba Safari</div>
             </div>
-            <!---- One ---->
-            <div id="one" class="tab-more tab-more-active">
-                <div class="more-tabs">
-                    <div class="image-layout">
-                        <div class="image-full">
-                            <img src="./images/see-hero-01.jpg" alt="Full Width Image">
-                        </div>
-                        <div class="image-half-container">
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 1">
+            <div class="tab-content active" id="lodges-tab1">
+                <div class="item-content">
+                    <div class="tab-image">
+                        <div class="image-layout">
+                            <div class="image-full">
+                                <img src="./images/narina-hero.jpg" alt="Full Width Image">
                             </div>
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 2">
+                            <div class="image-half-container">
+                                <div class="image-half">
+                                    <img src="./images/narina-01.jpg" alt="Half Width Image 1">
+                                </div>
+                                <div class="image-half">
+                                    <img src="./images/narina-02.jpg" alt="Half Width Image 2">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-content">
-                    <h2 class="tab-title">Lion Sands Narina Lodge</h2>
-                    <p>This intimate safari lodge, like the Narina Trogon bird after which it is named, is astonishingly
-                        beautiful and blends unassumingly into the natural environment. Perched on stilts under a canopy
-                        of 100-year-old trees just up from the water, Narina Lodge with her nine private luxury suites
-                        and gorgeous spa with a view, nurtures natural beauty and offers you a wonderful sense of
-                        remoteness and peace.</p>
-                </div>
-            </div>
-
-
-            <!---- Two ---->
-            <div id="two" class="tab-more">
-                <div class="more-tabs">
-                    <div class="image-layout">
-                        <div class="image-full">
-                            <img src="./images/see-hero-01.jpg" alt="Full Width Image">
-                        </div>
-                        <div class="image-half-container">
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 1">
-                            </div>
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 2">
-                            </div>
+                    <div class="tab-text">
+                        <div class="text-description">
+                            <h2>Lion Sands Narina Lodge</h2>
+                            <p>This intimate safari lodge, like the Narina Trogon bird after which it is named, is
+                                astonishingly beautiful and blends unassumingly into the natural environment. Perched on
+                                stilts under a canopy of 100-year-old trees just up from the water, Narina Lodge with
+                                her
+                                nine private luxury suites and gorgeous spa with a view, nurtures natural beauty and
+                                offers
+                                you a wonderful sense of remoteness and peace.</p>
                         </div>
                     </div>
                 </div>
-                <div class="tab-content">
-                    <h2 class="tab-title">Lion Sands Narina Lodge</h2>
-                    <p>This intimate safari lodge, like the Narina Trogon bird after which it is named, is astonishingly
-                        beautiful and blends unassumingly into the natural environment. Perched on stilts under a canopy
-                        of 100-year-old trees just up from the water, Narina Lodge with her nine private luxury suites
-                        and gorgeous spa with a view, nurtures natural beauty and offers you a wonderful sense of
-                        remoteness and peace.</p>
-                </div>
             </div>
 
-
-            <!---- Three ---->
-            <div id="three" class="tab-more">
-                <div class="more-tabs">
-                    <div class="image-layout">
-                        <div class="image-full">
-                            <img src="./images/see-hero-01.jpg" alt="Full Width Image">
-                        </div>
-                        <div class="image-half-container">
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 1">
+            <div class="tab-content" id="lodges-tab2">
+                <div class="item-content">
+                    <div class="tab-image">
+                        <div class="image-layout">
+                            <div class="image-full">
+                                <img src="./images/(HERO) Lion Sands _River Lodge_2_Guest Pool Area.jpg"
+                                    alt="Full Width Image">
                             </div>
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 2">
+                            <div class="image-half-container">
+                                <div class="image-half">
+                                    <img src="./images/Lion Sands _River Lodge_2_Guest Fire Deck Area.jpg"
+                                        alt="Half Width Image 1">
+                                </div>
+                                <div class="image-half">
+                                    <img src="./images/Lion Sands River Lodge River Suite-1.jpg"
+                                        alt="Half Width Image 2">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-content">
-                    <h2 class="tab-title">Lion Sands Narina Lodge</h2>
-                    <p>This intimate safari lodge, like the Narina Trogon bird after which it is named, is astonishingly
-                        beautiful and blends unassumingly into the natural environment. Perched on stilts under a canopy
-                        of 100-year-old trees just up from the water, Narina Lodge with her nine private luxury suites
-                        and gorgeous spa with a view, nurtures natural beauty and offers you a wonderful sense of
-                        remoteness and peace.</p>
-                </div>
-            </div>
-
-
-            <!---- Four ---->
-            <div id="four" class="tab-more">
-                <div class="more-tabs">
-                    <div class="image-layout">
-                        <div class="image-full">
-                            <img src="./images/see-hero-01.jpg" alt="Full Width Image">
-                        </div>
-                        <div class="image-half-container">
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 1">
-                            </div>
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 2">
-                            </div>
+                    <div class="tab-text">
+                        <div class="text-description">
+                            <h2>Lion Sands River Lodge</h2>
+                            <p>TAt River Lodge, connection thrives – whether it’s between nature, loved ones, our
+                                friendly people or new friends. Here, age-old trees shade suites with river vistas. The
+                                18 rooms and social areas offer luxury safari living with a special magic. Share
+                                sundowners on the deck, swop wildlife stories in the safari lounge or on the fire deck,
+                                dine under the stars, and cool off in the pool between game drives. Our first lodge
+                                exudes nostalgic charm, attracting generations of returnees seeking a connection-rich
+                                safari.</p>
                         </div>
                     </div>
                 </div>
-                <div class="tab-content">
-                    <h2 class="tab-title">Lion Sands Narina Lodge</h2>
-                    <p>This intimate safari lodge, like the Narina Trogon bird after which it is named, is astonishingly
-                        beautiful and blends unassumingly into the natural environment. Perched on stilts under a canopy
-                        of 100-year-old trees just up from the water, Narina Lodge with her nine private luxury suites
-                        and gorgeous spa with a view, nurtures natural beauty and offers you a wonderful sense of
-                        remoteness and peace.</p>
-                </div>
             </div>
 
-            <!---- Five ---->
-            <div id="five" class="tab-more">
-                <div class="more-tabs">
-                    <div class="image-layout">
-                        <div class="image-full">
-                            <img src="./images/see-hero-01.jpg" alt="Full Width Image">
-                        </div>
-                        <div class="image-half-container">
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 1">
+            <div class="tab-content" id="lodges-tab3">
+                <div class="item-content">
+                    <div class="tab-image">
+                        <div class="image-layout">
+                            <div class="image-full">
+                                <img src="./images/(HERO) Lion Sands_Tinga Lodge_ Guest Deck Area.jpg"
+                                    alt="Full Width Image">
                             </div>
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 2">
+                            <div class="image-half-container">
+                                <div class="image-half">
+                                    <img src="./images/Lion Sands Tinga Lodge Deck elephants in river.jpg"
+                                        alt="Half Width Image 1">
+                                </div>
+                                <div class="image-half">
+                                    <img src="./images/Lion Sands Tinga Lodge Suite1.jpg" alt="Half Width Image 2">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-content">
-                    <h2 class="tab-title">Lion Sands Narina Lodge</h2>
-                    <p>This intimate safari lodge, like the Narina Trogon bird after which it is named, is astonishingly
-                        beautiful and blends unassumingly into the natural environment. Perched on stilts under a canopy
-                        of 100-year-old trees just up from the water, Narina Lodge with her nine private luxury suites
-                        and gorgeous spa with a view, nurtures natural beauty and offers you a wonderful sense of
-                        remoteness and peace.</p>
-                </div>
-            </div>
-
-
-            <!---- Six ---->
-            <div id="six" class="tab-more">
-                <div class="more-tabs">
-                    <div class="image-layout">
-                        <div class="image-full">
-                            <img src="./images/see-hero-01.jpg" alt="Full Width Image">
-                        </div>
-                        <div class="image-half-container">
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 1">
-                            </div>
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 2">
-                            </div>
+                    <div class="tab-text">
+                        <div class="text-description">
+                            <h2>Lion Sands Tinga Lodge</h2>
+                            <p>Relive safari nostalgia at Tinga Lodge. Nine suites, set apart on a high bank up from the
+                                Sabie River capture the romance of Africa and evoke a timeless and classic safari
+                                atmosphere. Dine fireside in the lodge, admire the stars from the fire deck, relax at
+                                the pool, and enjoy sharing stories of the day as the river breeze soothes your senses.
+                                Tinga offers a wide variety of activities on site that keep the young ones entertained
+                                with a dedicated playroom.</p>
                         </div>
                     </div>
                 </div>
-                <div class="tab-content">
-                    <h2 class="tab-title">Lion Sands Narina Lodge</h2>
-                    <p>This intimate safari lodge, like the Narina Trogon bird after which it is named, is astonishingly
-                        beautiful and blends unassumingly into the natural environment. Perched on stilts under a canopy
-                        of 100-year-old trees just up from the water, Narina Lodge with her nine private luxury suites
-                        and gorgeous spa with a view, nurtures natural beauty and offers you a wonderful sense of
-                        remoteness and peace.</p>
-                </div>
             </div>
 
-
-            <!---- Seven ---->
-            <div id="seven" class="tab-more">
-                <div class="more-tabs">
-                    <div class="image-layout">
-                        <div class="image-full">
-                            <img src="./images/see-hero-01.jpg" alt="Full Width Image">
-                        </div>
-                        <div class="image-half-container">
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 1">
+            <div class="tab-content" id="lodges-tab4">
+                <div class="item-content">
+                    <div class="tab-image">
+                        <div class="image-layout">
+                            <div class="image-full">
+                                <img src="./images/(HERO) Lion Sands_Ivory Lodge_3_Villa Exterior View.jpg"
+                                    alt="Full Width Image">
                             </div>
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 2">
+                            <div class="image-half-container">
+                                <div class="image-half">
+                                    <img src="./images/Lion Sands Ivory Lodge Deck sunrise.jpg"
+                                        alt="Half Width Image 1">
+                                </div>
+                                <div class="image-half">
+                                    <img src="./images/Lion Sands_Ivory Lodge_3_Villa Views20.jpg"
+                                        alt="Half Width Image 2">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-content">
-                    <h2 class="tab-title">Lion Sands Narina Lodge</h2>
-                    <p>This intimate safari lodge, like the Narina Trogon bird after which it is named, is astonishingly
-                        beautiful and blends unassumingly into the natural environment. Perched on stilts under a canopy
-                        of 100-year-old trees just up from the water, Narina Lodge with her nine private luxury suites
-                        and gorgeous spa with a view, nurtures natural beauty and offers you a wonderful sense of
-                        remoteness and peace.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-    <!-- More Hotels Tab -->
-    <main>
-        <section class="tab__container">
-            <h2 class="tab-section-heading">TestMORE Family Collection Lodges in this Promotion</h2>
-            <div class="tab__title">
-                <button class="tab__button-hotel tab_button-hotel-active" onclick="openTab('hotel-one', this)">Lion Sands Narina</button>
-                <button class="tab__button-hotel" onclick="openTab('hotel-two', this)">Lion Sands River</button>
-                <button class="tab__button-hotel" onclick="openTab('hotel-three', this)">Lion Sands Tinga</button>
-                <button class="tab__button-hotel" onclick="openTab('hote-four', this)">Lion Sands Ivory</button>
-            </div>
-            <!---- One ---->
-            <div id="hotel-one" class="tab-more-hotel tab-more-hotel-active">
-                <div class="more-tabs">
-                    <div class="image-layout">
-                        <div class="image-full">
-                            <img src="./images/see-hero-01.jpg" alt="Full Width Image">
-                        </div>
-                        <div class="image-half-container">
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 1">
-                            </div>
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 2">
-                            </div>
+                    <div class="tab-text">
+                        <div class="text-description">
+                            <h2>Lion Sands Ivory Lodge</h2>
+                            <p>Ivory Lodge is for those in search of utter exclusivity and a deeper connection with
+                                nature. Eight suites by the river provide a private vantage point to the ever-present
+                                parade of the reserve's wildlife. From your bed, deck, or plunge pool, this is one of
+                                the best places to look upon an Africa that will feel like yours alone – uninterrupted.
+                                All that is left to do is enjoy every moment of game drives, bush walks, and treatments
+                                at the spa.</p>
                         </div>
                     </div>
                 </div>
-                <div class="tab-content">
-                    <h2 class="tab-title">Lion Sands Narina Lodge</h2>
-                    <p>This intimate safari lodge, like the Narina Trogon bird after which it is named, is astonishingly
-                        beautiful and blends unassumingly into the natural environment. Perched on stilts under a canopy
-                        of 100-year-old trees just up from the water, Narina Lodge with her nine private luxury suites
-                        and gorgeous spa with a view, nurtures natural beauty and offers you a wonderful sense of
-                        remoteness and peace.</p>
-                </div>
             </div>
 
-
-            <!---- Two ---->
-            <div id="hotel-two" class="tab-more-hotel">
-                <div class="more-tabs">
-                    <div class="image-layout">
-                        <div class="image-full">
-                            <img src="./images/see-hero-01.jpg" alt="Full Width Image">
-                        </div>
-                        <div class="image-half-container">
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 1">
+            <div class="tab-content" id="lodges-tab5">
+                <div class="item-content">
+                    <div class="tab-image">
+                        <div class="image-layout">
+                            <div class="image-full">
+                                <img src="./images/Monwana Main Lodge sunset.jpg" alt="Full Width Image">
                             </div>
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 2">
+                            <div class="image-half-container">
+                                <div class="image-half">
+                                    <img src="./images/Monwana-335.jpg" alt="Half Width Image 1">
+                                </div>
+                                <div class="image-half">
+                                    <img src="./images/Monwana - Spa fatdassie6.jpg" alt="Half Width Image 2">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-content">
-                    <h2 class="tab-title">Lion Sands Narina Lodge</h2>
-                    <p>This intimate safari lodge, like the Narina Trogon bird after which it is named, is astonishingly
-                        beautiful and blends unassumingly into the natural environment. Perched on stilts under a canopy
-                        of 100-year-old trees just up from the water, Narina Lodge with her nine private luxury suites
-                        and gorgeous spa with a view, nurtures natural beauty and offers you a wonderful sense of
-                        remoteness and peace.</p>
-                </div>
-            </div>
-
-
-            <!---- Three ---->
-            <div id="hotel-three" class="tab-more-hotel">
-                <div class="more-tabs">
-                    <div class="image-layout">
-                        <div class="image-full">
-                            <img src="./images/see-hero-01.jpg" alt="Full Width Image">
-                        </div>
-                        <div class="image-half-container">
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 1">
-                            </div>
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 2">
-                            </div>
+                    <div class="tab-text">
+                        <div class="text-description">
+                            <h2> Monwana Game Lodge</h2>
+                            <p>Come home to excellence, where sustainability meets exceptional comfort, creating your
+                                intimate home away from home. Recognised as Africa’s No 1 safari lodge and placing 21st
+                                among the world’s finest hotels, according to Travel + Leisure’s World’s Best Awards,
+                                Monwana has captured the hearts of discerning travellers worldwide. This luxurious and
+                                intimate safari experience at Monwana has been built with a deep respect for nature -
+                                the architecture planned accordingly around a well-established large old leadwood tree. 
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="tab-content">
-                    <h2 class="tab-title">Lion Sands Narina Lodge</h2>
-                    <p>This intimate safari lodge, like the Narina Trogon bird after which it is named, is astonishingly
-                        beautiful and blends unassumingly into the natural environment. Perched on stilts under a canopy
-                        of 100-year-old trees just up from the water, Narina Lodge with her nine private luxury suites
-                        and gorgeous spa with a view, nurtures natural beauty and offers you a wonderful sense of
-                        remoteness and peace.</p>
-                </div>
             </div>
 
-
-            <!---- Four ---->
-            <div id="hote-four" class="tab-more-hotel">
-                <div class="more-tabs">
-                    <div class="image-layout">
-                        <div class="image-full">
-                            <img src="./images/see-hero-01.jpg" alt="Full Width Image">
-                        </div>
-                        <div class="image-half-container">
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 1">
+            <div class="tab-content" id="lodges-tab6">
+                <div class="item-content">
+                    <div class="tab-image">
+                        <div class="image-layout">
+                            <div class="image-full">
+                                <img src="./images/(HERO )Marataba Mountain Lodge_Eco Suite_3_Views-1.jpg"
+                                    alt="Full Width Image">
                             </div>
-                            <div class="image-half">
-                                <img src="./images/see-image-02.jpg" alt="Half Width Image 2">
+                            <div class="image-half-container">
+                                <div class="image-half">
+                                    <img src="./images/Marataba Mountain Lodge Dining.jpg" alt="Half Width Image 1">
+                                </div>
+                                <div class="image-half">
+                                    <img src="./images/Marataba Mountain Lodge_2_Guest Pool Area-4.jpg"
+                                        alt="Half Width Image 2">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-content">
-                    <h2 class="tab-title">Lion Sands Narina Lodge</h2>
-                    <p>This intimate safari lodge, like the Narina Trogon bird after which it is named, is astonishingly
-                        beautiful and blends unassumingly into the natural environment. Perched on stilts under a canopy
-                        of 100-year-old trees just up from the water, Narina Lodge with her nine private luxury suites
-                        and gorgeous spa with a view, nurtures natural beauty and offers you a wonderful sense of
-                        remoteness and peace.</p>
+                    <div class="tab-text">
+                        <div class="text-description">
+                            <h2>Marataba Mountain Lodge</h2>
+                            <p>Overlooking the Waterfall Valley, and the Waterberg escarpment merging into acacia
+                                savannah, Mountain Lodge gives you space, seclusion and a feeling of freedom. You’ll
+                                feel as if you have the entire wilderness to yourself on this soulful safari adventure.
+                                With only five luxury rooms perched on the escarpment, follow your own rhythm here, with
+                                views that will soothe your soul and game drives that excite the spirit. Welcomes guests
+                                ages 16+.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
 
+            <div class="tab-content" id="lodges-tab7">
+                <div class="item-content">
+                    <div class="tab-image">
+                        <div class="image-layout">
+                            <div class="image-full">
+                                <img src="./images/(HERO) Marataba South Africa_Safari_4_Bush Walk-7.jpg"
+                                    alt="Full Width Image">
+                            </div>
+                            <div class="image-half-container">
+                                <div class="image-half">
+                                    <img src="./images/Female Cheetah and cubs Francois Fourie.jpg"
+                                        alt="Half Width Image 1">
+                                </div>
+                                <div class="image-half">
+                                    <img src="./images/Marataba South Africa_Safari_4_ Game Drive-4.jpg"
+                                        alt="Half Width Image 2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-text">
+                        <div class="text-description">
+                            <h2> Marataba Safari Lodge</h2>
+                            <p>Marataba offers a genuine safari adventure tailored for families and friends. Our luxury
+                                tents ensure comfort while you're immersed in the wild. Beyond game drives and bush
+                                walks, enhanced with unique surprises, there's ample opportunity for relaxation. Whether
+                                it's pool lounging, an in-room spa session, or simply soaking in the tranquil
+                                environment, the choice is yours. We keep things flexible – from dining to activities –
+                                for a seamless family experience. With our Mack & Madi Kids’ Adventure Safari Club,
+                                children are in for a treat: fun activities, an eco-garden play area, and a dedicated
+                                coordinator to guide them. It's all about creating cherished memories and sparking a
+                                lifelong love for nature. Welcomes children of all ages. We offer child minding services
+                                for the little ones who are not able to join certain safari experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotels Section -->
+    <section class="tab-container hotel" id="hotels">
+        <div class="tab-heading">
+            <h2>MORE Family Collection Hotels in this Promotion</h2>
+        </div>
+        <div class="tabs">
+            <div class="tab-headers">
+                <div class="tab-header active" data-tab="hotels-tab1">More Quarters Neighbourhood Hotel</div>
+                <div class="tab-header" data-tab="hotels-tab2">Cape Cadogan Boutique Hotel</div>
+                <div class="tab-header" data-tab="hotels-tab3">Stanley & Livingstone Boutique Hotel</div>
+                <div class="tab-header" data-tab="hotels-tab4">Ursula's Homestead</div>
+            </div>
+            <div class="tab-content active" id="hotels-tab1">
+                <div class="item-content">
+                    <div class="tab-image">
+                        <div class="image-layout">
+                            <div class="image-full">
+                                <img src="./images/more-q-hero.jpg" alt="Full Width Image">
+                            </div>
+                            <div class="image-half-container">
+                                <div class="image-half">
+                                    <img src="./images/more-q-01.jpg" alt="Half Width Image 1">
+                                </div>
+                                <div class="image-half">
+                                    <img src="./images/more-q-02.jpg" alt="Half Width Image 2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-text">
+                        <div class="text-description">
+                            <h2>More Quarters Neighbourhood Hotel</h2>
+                            <p>The artsy, eclectic vibe of the Kloof Street Neighbourhood has spilled over into More
+                                Quarters. The spacious Luxury Apartments boast vibrant colours and contemporary design,
+                                curated not only to invigorate your senses but also to provide the comfort and
+                                tranquillity you deserve. Table Mountain is the backdrop to this vibey neighbourhood
+                                getaway, and Cape Town’s best attractions are just a short walk or drive away. This
+                                stylish collection of converted heritage townhouses in a secluded quarter is close
+                                enough to the city buzz and the action yet removed enough to peacefully enjoy sundowners
+                                on the patio. Cape Town’s beaches, mountains and cityscape are yours to explore, and we
+                                can arrange all the best tours and experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="hotels-tab2">
+                <div class="item-content">
+                    <div class="tab-image">
+                        <div class="image-layout">
+                            <div class="image-full">
+                                <img src="./images/Cape Cadogan Exterior 28.jpg" alt="Full Width Image">
+                            </div>
+                            <div class="image-half-container">
+                                <div class="image-half">
+                                    <img src="./images/Cape Cadogan Pool Area 16.jpg" alt="Half Width Image 1">
+                                </div>
+                                <div class="image-half">
+                                    <img src="./images/Cape Cadogan-Superior Luxury Room 21.jpg"
+                                        alt="Half Width Image 2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-text">
+                        <div class="text-description">
+                            <h2>Cape Cadogan Boutique Hotel</h2>
+                            <p>In 2022, we revitalised this historic hotel, collaborating with local artisans who
+                                infused the design with elegant touches of emerald green, classic black and white, and
+                                just the right hint of gold sparkle. Each of our 19 rooms seamlessly blends the old with
+                                the new, ensuring luxurious comfort. Our commitment to wellness is holistic. The spa
+                                provides soothing treatments, and our fitness centre is equipped with the essentials.
+                                Relax in the sunroom, evoking the charm of a Victorian home, or unwind by one of our two
+                                pools as we serve refreshing beverages. Our prized restaurant, Upper Union, is a
+                                renowned dining destination in Cape Town.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="hotels-tab3">
+                <div class="item-content">
+                    <div class="tab-image">
+                        <div class="image-layout">
+                            <div class="image-full">
+                                <img src="./images/(HERO) Stanley & Livingston_1_Evening Hotel Front View.jpg"
+                                    alt="Full Width Image">
+                            </div>
+                            <div class="image-half-container">
+                                <div class="image-half">
+                                    <img src="./images/Stanley & Livingstone Boutique Hotel_4_Safari & Activities-85.jpg"
+                                        alt="Half Width Image 1">
+                                </div>
+                                <div class="image-half">
+                                    <img src="./images/Stanley & Livingstone_6_Outdoor Dining Area-2.jpg"
+                                        alt="Half Width Image 2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-text">
+                        <div class="text-description">
+                            <h2> Stanley & Livingstone Boutique Hotel</h2>
+                            <p>Discover luxury at Stanley & Livingstone Boutique Hotel. Enjoy dining at 1871,
+                                breathtaking wildlife views of Victoria Falls Private Game Reserve, and handpicked
+                                adventures that awaken the spirit. Victoria Falls isn't just a destination—it's an
+                                experience. From the powerful allure of the Falls to sundowners on the Zambezi, there’s
+                                an adventure for every taste. Stanley & Livingstone brings a touch of luxury to the
+                                Victoria Falls Private Game Reserve, home of the Big Five. Set amidst this incredible
+                                natural beauty, and just a 15-minute drive from the Falls and the vibrant town, our 16
+                                Suite Boutique Hotel offers a seamless blend of comfort and adventure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="hotels-tab4">
+                <div class="item-content">
+                    <div class="tab-image">
+                        <div class="image-layout">
+                            <div class="image-full">
+                                <img src="./images/(HERO) Ursula's Homestead_2_Facilities-9.jpg" alt="Full Width Image">
+                            </div>
+                            <div class="image-half-container">
+                                <div class="image-half">
+                                    <img src="./images/Ursula's Homestead_4_Experiences-3.jpg" alt="Half Width Image 1">
+                                </div>
+                                <div class="image-half">
+                                    <img src="./images/Ursula's Homestead_Safari & Activities--86.jpg"
+                                        alt="Half Width Image 2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-text">
+                        <div class="text-description">
+                            <h2> Ursula's Homestead</h2>
+                            <p>Settle in and feel at home in the relaxed and intimate environment of Ursula’s Homestead,
+                                your ideal base from which to explore Victoria Falls. This charming homestead, with just
+                                four individual garden rooms, is the sister property of Stanley & Livingstone Boutique
+                                Hotel. It promises an authentic Victoria Falls experience with the added intimacy and
+                                privacy that only a smaller establishment can offer. Designed in a semi-circular layout,
+                                the main guest area and terrace, fire-deck, pool area, and the rooms all offer wide-open
+                                views of the game reserve, allowing you to spot wildlife, even from your room.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- CTA Banner Section -->
 
-    <section class="banner">
+    <section class="banner"
+        style="background-position:top center; background-size: cover; background-image: url('./images/stay-3-02.jpg');">
         <div class="banner-container">
             <div class="banner-content">
-                <h2>Book SeeMORE+ promotion now!</h2>
-                <a href="#" class="cta-button">Learn More</a>
+                <h2>Book ExperienceMORE Promotion Now!</h2>
+                <a href="#enquire" class="cta-button">Make An Enquiry</a>
             </div>
         </div>
     </section>
@@ -443,14 +515,15 @@
                 <img src="./images/quotes.svg" alt="Quote Icon">
             </div>
             <blockquote>
-                <p>This was an amazing experience from start to finish. The welcome is warm and genuine and all the
-                    staff go out of their way to make you feel at home. Nothing is too much trouble. The rooms are
-                    well-appointed, clean and comfortable and the views are stunning. Our guide and tracker, Jabu and
-                    Velley, were excellent – they are respectful of the environment and are really knowledgeable as well
-                    as great fun. Thank you to everyone for making our stay so enjoyable and memorable.</p>
+                <p>“So Glad That We Used The More Family Co. To Plan Our Entire Africa Trip! I would always use the More
+                    Family company in the future for travel in this region. I would trust them to take care of us
+                    completely and give us wonderful experiences, and I know that I would end up feeling disappointed if
+                    I used anyone else.”</p>
             </blockquote>
             <footer class="testimonial-author">
-                <p>Neil E - United Kingdom</p>
+                <p>
+                    By Windcurrent (TripAdvisor)
+                </p>
             </footer>
         </div>
     </section>
@@ -466,49 +539,49 @@
                 </div>
                 <div class="accordion-content">
                     <div>
-                        <p>Monwana Game Lodge Rates Include:</p>
+                        <p>Room Types:</p>
                         <ul>
-                            <li>Specialist activities included: Game drives; bush walks; stargazing; bush breakfasts,
-                                picnic lunches and bush dinners</li>
-                            <li>Ultra-luxurious accommodation in a Suite</li>
-                            <li>With private lounge and heated plunge pool</li>
-                            <li>All meals</li>
-                            <li>Teas/coffees</li>
-                            <li>Maxibar in room</li>
-                            <li>A selection of premium brand beers, spirits and cellar wines</li>
-                            <li>Laundry</li>
-                            <li>Two game drives daily with FGASA-accredited field guide and tracker</li>
-                            <li>Game drive refreshments and snacks</li>
-                            <li>Specified inclusive safari activities</li>
-                            <li>Wi-Fi&nbsp;</li>
-                            <li>Access to gymnasium&nbsp;</li>
+                            <li>Lion Sands River Lodge: Luxury Room, Superior Luxury Room, River Suite (with plunge
+                                pool).</li>
+                            <li>Lion Sands Narina &amp; Tinga Lodge: Suite with private lounge and plunge pool.</li>
+                            <li>Lion Sands Ivory &amp; Fish Eagle Residence: Ultra-luxurious Suite with private lounge
+                                and plunge pool.</li>
+                            <li>Monwana Game Lodge: Suite with private lounge and heated plunge pool.</li>
+                            <li>Marataba Safari &amp; Mountain Lodge: Luxury Tent or accommodation.</li>
+                            <li>More Quarters Neighbourhood Hotel: Classic and luxury accommodation.</li>
+                            <li>Cape Cadogan Boutique Hotel: Classic and luxury accommodation.</li>
+                            <li>Stanley &amp; Livingstone Boutique Hotel: Luxury accommodation.</li>
+                            <li>Ursula's Homestead: Accommodation and breakfast.</li>
                         </ul>
-                        <p>Ivory Lodge:&nbsp;</p>
+                        <p>Laundry:</p>
                         <ul>
-                            <li>Specialist activities included: Bush walks; stargazing; , picnic lunches and bush
-                                dinners; Mack &amp; Madi Kids’ Adventure Explorers experiences.</li>
-                            <li>Luxurious accommodation in a Luxury Room, Superior Luxury Room or River Suite (with
-                                plunge pool)</li>
-                            <li>All meals</li>
-                            <li>Teas/coffees</li>
-                            <li>Maxibar in room</li>
-                            <li>Inclusive drinks and selected snacks (all soft drinks, and a selection of beers, spirits
-                                and house wines)</li>
-                            <li>Two game drives daily with a FGASA-accredited field guide</li>
-                            <li>Game drive refreshments and snacks</li>
-                            <li>Specified inclusive safari activities</li>
-                            <li>Wi-Fi&nbsp;</li>
+                            <li>Included at Lion Sands Ivory &amp; Fish Eagle Residence, Monwana Game Lodge, Cape
+                                Cadogan Boutique Hotel.</li>
+                            <li>Excluded at Lion Sands Narina &amp; Tinga Lodge, Marataba Safari &amp; Mountain Lodge,
+                                Stanley &amp; Livingstone Boutique Hotel, and Ursula's Homestead.</li>
                         </ul>
-                        <p>Cape Cadogan Boutique Hotel</p>
+                        <p>Minibar:</p>
                         <ul>
-                            <li>Specialist activities included: Complimentary shared scheduled transfers twice daily to
-                                the V&amp;A Waterfront; MORE Family Concierge service</li>
-                            <li>Classic and luxury accommodation</li>
-                            <li>Coffee machine in your room as well as bottled water</li>
-                            <li>Full breakfast made to order; complimentary afternoon sherry and canapes</li>
-                            <li>Wi-Fi</li>
-                            <li>International newspapers freely available in our lounges</li>
-                            <li>Free access to the gymnasium</li>
+                            <li>Lion Sands Ivory &amp; Fish Eagle Residence: Maxi-bar with premium brands.</li>
+                            <li>Other Lion Sands properties, Marataba Safari &amp; Mountain Lodge: Minibar with standard
+                                drinks.</li>
+                            <li>Specialist Activities:</li>
+                            <li>Narina &amp; Tinga Lodge: Rhino conservation lectures.</li>
+                            <li>Monwana Game Lodge: Wild dog tracking, hot-air balloon rides.</li>
+                            <li>Stanley &amp; Livingstone &amp; Ursula's Homestead: Black Rhino Experience, Tour of the
+                                Falls, Horse Riding, Game Drives, and Bush Walks.</li>
+                            <li>Marataba Lodges: Miss Mara Boating Activity.</li>
+                        </ul>
+                        <p>Transfers:</p>
+                        <ul>
+                            <li>Lion Sands properties: Skukuza Airport transfers included (except Ivory Lodge, where all
+                                transfers except Skukuza are excluded).</li>
+                            <li>Ursula's Homestead: Shared Victoria Falls town transfers at a specified cost.
+                            </li>
+                        </ul>
+                        <p>Gym Access:</p>
+                        <ul>
+                            <li>Included at Monwana Game Lodge and Cape Cadogan Boutique Hotel.&nbsp;</li>
                         </ul>
                     </div>
                 </div>
@@ -520,48 +593,43 @@
                 </div>
                 <div class="accordion-content">
                     <div>
-                        <p>Monwana Game Lodge Rates Include:</p>
                         <ul>
-                            <li>Laundry</li>
-                            <li>Premium brand beers, spirits, cellar wines and champagnes; cigars and cigarettes</li>
-                            <li>All flights and transfers (other than Skukuza Airport)</li>
-                            <li>Gratuities</li>
-                            <li>Telephone calls</li>
-                            <li>MORE Gallery purchases</li>
-                            <li>Spa treatments</li>
-                            <li>Sabi Sand and KNP entrance fees and guest conservation contribution</li>
-                            <li>Sustainability Levy (R145 per person per night)</li>
-                            <li>Any extras will be for the guests’ account payable on departure</li>
-                            <li>Specialist activities excluded: Treehouse experiences; private open safari vehicle hire;
-                                local community experiences (with More Community Foundation); helicopter flights; golf;
-                                exclusive bush breakfasts and dinners.</li>
-                        </ul>
-                        <p>Lion Sands Ivory Lodge</p>
-                        <ul>
-                            <li>Cigars and cigarettes</li>
-                            <li>All flights and transfers not specified (other than Skukuza Airport transfer)</li>
-                            <li>Gratuities</li>
-                            <li>Telephone calls</li>
-                            <li>MORE Gallery purchases</li>
-                            <li>Spa Treatments</li>
-                            <li>Sabi Sand entrance fee and guest conservation contribution</li>
-                            <li>Sustainability Levy (R145 per person per night)Any extras will be for the guests’
-                                accounts</li>
-                            <li>Specialist activities excluded: Private open safari vehicle hire; exclusive use bush
-                                breakfasts &amp; dinners; any additional external services</li>
-                        </ul>
-                        <p>Cape Cadogan Boutique Hotel</p>
-                        <ul>
-                            <li>Spa Treatments</li>
-                            <li>Laundry</li>
-                            <li>Minibar in room</li>
-                            <li>All beverages</li>
-                            <li>Gratuities</li>
-                            <li>Telephone calls</li>
-                            <li>Transfers not specified</li>
-                            <li>Sustainability Levy (R145 per apartment per night)</li>
-                            <li>Any extras will be for the guest’s account</li>
-                            <li>Specialist activities excluded: Activities, excursions and tours</li>
+                            <li>Premium Brand Beverages:<ul>
+                                    <li>Excluded at Lion Sands Narina &amp; Tinga Lodge, Marataba Safari &amp; Mountain
+                                        Lodge, Stanley &amp; Livingstone Boutique Hotel, Ursula's Homestead.</li>
+                                    <li>Included at Lion Sands Ivory &amp; Fish Eagle Residence, Monwana Game Lodge.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Flights and Transfers:<ul>
+                                    <li>Excluded across all properties except Skukuza Airport transfers, which are
+                                        included in most Lion Sands properties.</li>
+                                </ul>
+                            </li>
+                            <li>Specialist Activities Excluded:<ul>
+                                    <li>Lion Sands Narina, Tinga, Ivory Lodge: Local community experiences, private open
+                                        safari vehicle hire.</li>
+                                    <li>Monwana Game Lodge: Hot-air balloon rides, wild dog tracking.</li>
+                                    <li>Stanley &amp; Livingstone &amp; Ursula's Homestead: Mack &amp; Madi Kids’ 3rd
+                                        party experiences, Black Rhino Experience, Tour of the Falls, Horse Riding.</li>
+                                </ul>
+                            </li>
+                            <li>Sustainability Levy:<ul>
+                                    <li>Generally R145 per person per night across most properties except for:</li>
+                                    <li>Stanley &amp; Livingstone Boutique Hotel: $20 per person per night.</li>
+                                    <li>Ursula's Homestead: $10 per person per night.</li>
+                                </ul>
+                            </li>
+                            <li>Wi-Fi:<ul>
+                                    <li>Included in public areas only at Marataba Safari Lodge.</li>
+                                </ul>
+                            </li>
+                            <li>Gratuities:<ul>
+                                    <li>Excluded universally but more explicitly noted in certain properties like Lion
+                                        Sands Narina &amp; Tinga Lodge, Stanley &amp; Livingstone, and Ursula's
+                                        Homestead.<br>&nbsp;</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -574,17 +642,20 @@
                 <div class="accordion-content">
                     <div>
                         <ul>
-                            <li>Valid until April 2026 (excluding block-out dates)</li>
-                            <li>Subject to availability of rooms&nbsp;</li>
+                            <li>Validity (excluding block-out dates): Until April 2026</li>
+                            <li>All MORE Family Collection properties, excluding Residences</li>
+                            <li>Honeymoon offer is valid for a year after date of marriage (marriage certificate to be
+                                provided)</li>
+                            <li>All promotions are subject to availability of rooms </li>
                             <li>Valid for FIT bookings only, maximum 5 rooms/10 guests</li>
                             <li>Promotions can only be booked on contracted STO rates and not on any other negotiated or
                                 discounted rates</li>
                             <li>Promotions cannot be combined unless specified above</li>
                             <li>Please specify the name of the promotion (i.e., ‘StayMORE’) when you enquire</li>
                             <li>Where promotions are applicable at a specific property, this automatically includes the
-                                related residences, excluding Marataba Residence</li>
-                            <li>BLOCK-OUT DATES: 20 December - 3 January (NOTE: Stanley &amp; Livingstone and Ursula’s
-                                Homestead is EXCLUDED from these block-out dates)</li>
+                                related residences, excluding Marataba Residence<br>BLOCK-OUT DATES: 20 December - 3
+                                January (NOTE: Stanley &amp; Livingstone and Ursula’s Homestead is EXCLUDED from these
+                                block-out dates)</li>
                         </ul>
                     </div>
                 </div>
@@ -593,7 +664,7 @@
     </section>
 
     <!-- Enquiry Form -->
-    <section class="more-form">
+    <section class="more-form" id="enquire">
         <div class="form-container">
             <h2>Enquire Now</h2>
             <form>
@@ -632,342 +703,17 @@
 
                 <div class="form-row">
                     <div class="form-column">
-                        <label for="numberOfAdults">Number of Adults:</label>
-                        <select id="numberOfAdults" name="numberOfAdults">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </select>
-                    </div>
-                    <div class="form-column">
-                        <label for="numberOfChildren">Number of Children:</label>
-                        <select id="numberOfChildren" name="numberOfChildren">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-column">
-                        <label for="interestedProperty">Interested Property:</label><br>
-                        <input type="radio" id="lionSandsIvoryLodge" name="interestedProperty"
-                            value="Lion Sands Ivory Lodge">
-                        <label class="radio-label" for="lionSandsIvoryLodge">Lion Sands Ivory Lodge</label><br>
-                        <input type="radio" id="monwanaGameLodge" name="interestedProperty" value="Monwana Game Lodge">
-                        <label class="radio-label" for="monwanaGameLodge">Monwana Game Lodge</label><br>
-                        <input type="radio" id="notSureYet" name="interestedProperty" value="Not sure yet">
-                        <label class="radio-label" for="notSureYet">Not sure yet</label>
+                        <label for="propertiesOfInterest">Properties of Interest:</label>
+                        <input type="text" id="propertiesOfInterest" name="propertiesOfInterest" required>
                     </div>
                 </div>
 
                 <div class="form-row submit-button">
-                    <input type="submit" value="Submit Enquiry">
+                    <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
     </section>
-
-    <style>
-        main {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-        }
-
-        /*Tabs*/
-
-        .image-layout {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            /* Adjust the gap as needed */
-            padding: 20px;
-            /* Optional padding for the container */
-        }
-
-        .image-full img {
-            width: 100%;
-            height: 320px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .image-half img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .image-half-container {
-            display: flex;
-            gap: 10px;
-            /* Adjust the gap as needed */
-        }
-
-        .image-half {
-            flex: 1;
-        }
-
-        @media (max-width: 768px) {
-            .image-half-container {
-                flex-direction: column;
-            }
-        }
-
-        h2.tab-section-heading {
-            font-size: 30px;
-            line-height: 107.52%;
-            font-family: 'Playfair Display';
-            color: #262633;
-            text-align: center;
-            margin: auto;
-            padding: 0;
-            padding-bottom: 30px;
-        }
-
-        h2.tab-title {
-            position: relative;
-            font-size: 48px;
-            line-height: 107.52%;
-            display: inline-block;
-            font-family: 'Playfair Dxisplay';
-            color: #262633;
-            text-align: left;
-            margin: 0;
-        }
-
-        .tab__container {
-            background: #fff;
-            width: 90vw;
-            margin: auto;
-            border-radius: 5px;
-            padding: 30px 30px 120px;
-            max-width: 100%;
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-
-        .tab__title {
-            margin: 25px 0 0;
-            padding-bottom: 40px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-        }
-
-        .tab__button:first-of-type {
-            margin: 0;
-        }
-
-        .tab__button {
-            padding: 15px;
-            border: none;
-            background: #fff;
-            outline: none;
-            cursor: pointer;
-            font-size: 12px;
-            letter-spacing: 0.07em;
-            line-height: 20px;
-            text-transform: uppercase;
-            font-family: Raleway;
-            color: #344054;
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-
-        .tab__button img {
-            height: 25px;
-            display: block;
-            margin: 0px auto 5px;
-            -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-        }
-
-        .tab_button-active {
-            border-bottom: 2px solid #262633;
-            background: #fff;
-            color: #262633;
-        }
-
-        .tab_button-active img {
-            filter: none;
-        }
-
-        .tab-more {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            visibility: hidden;
-            opacity: 0;
-            height: 0;
-            transform: translateY(10px);
-            transition: transform .3s ease-in;
-        }
-
-        .tab__button-hotel:first-of-type {
-            margin: 0;
-        }
-
-        .tab__button-hotel {
-            padding: 15px;
-            border: none;
-            background: #fff;
-            outline: none;
-            cursor: pointer;
-            font-size: 12px;
-            letter-spacing: 0.07em;
-            line-height: 20px;
-            text-transform: uppercase;
-            font-family: Raleway;
-            color: #344054;
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-
-        .tab__button-hotel img {
-            height: 25px;
-            display: block;
-            margin: 0px auto 5px;
-            -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-        }
-
-        .tab_button-hotel-active {
-            border-bottom: 2px solid #262633;
-            background: #fff;
-            color: #262633;
-        }
-
-        .tab_button-hotel-active img {
-            filter: none;
-        }
-
-        .tab-more-hotel {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            visibility: hidden;
-            opacity: 0;
-            height: 0;
-            transform: translateY(10px);
-            transition: transform .3s ease-in;
-        }
-
-
-        .tab-img {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-        }
-
-        .tab-img img {
-            height: 340px;
-            display: block;
-            margin: 0 auto;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .tab-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            padding: 40px;
-            padding-right: 160px;
-        }
-
-        .tab-content p {
-            font-size: 16px;
-            line-height: 158.02%;
-            font-family: Raleway;
-            color: #262633;
-            text-align: left;
-            display: inline-block;
-            padding-top: 30px;
-        }
-
-        .tab-content button {
-            border-radius: 30px;
-            text-transform: uppercase;
-            padding: 10px;
-            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-            border: none;
-            cursor: pointer;
-            background: #003a79;
-            color: #fff;
-            transition: all 0.3s ease;
-            width: 100px;
-        }
-
-        .tab-content button:hover {
-            background: #fff;
-            color: #003a79;
-        }
-
-        .tab-more-active {
-            visibility: visible;
-            opacity: 1;
-            height: 100%;
-            transform: translateY(0);
-            transition: transform .3s ease-out 0.1s, opacity .3s ease-out 0.1s;
-        }
-
-        .tab-more-hotel-active {
-            visibility: visible;
-            opacity: 1;
-            height: 100%;
-            transform: translateY(0);
-            transition: transform .3s ease-out 0.1s, opacity .3s ease-out 0.1s;
-        }
-    </style>
-
-
-    <script>
-        function openTab(tabId, element) {
-            var tabs = document.getElementsByClassName("tab-more");
-            var buttons = document.getElementsByClassName("tab__button");
-
-            // Deactivate all tabs and buttons
-            for (var i = 0; i < tabs.length; i++) {
-                tabs[i].classList.remove("tab-more-active");
-            }
-            for (var i = 0; i < buttons.length; i++) {
-                buttons[i].classList.remove("tab_button-active");
-            }
-
-            // Activate the clicked tab and button
-            document.getElementById(tabId).classList.add("tab-more-active");
-            element.classList.add("tab_button-active");
-        }
-
-
-        function openLodge(tabId, element) {
-            var tabs = document.getElementsByClassName("tab-more-hotel");
-            var buttons = document.getElementsByClassName("tab__button-hotel");
-
-            // Deactivate all tabs and buttons
-            for (var i = 0; i < tabs.length; i++) {
-                tabs[i].classList.remove("tab-more-hotel-active");
-            }
-            for (var i = 0; i < buttons.length; i++) {
-                buttons[i].classList.remove("tab_button-hotel-active");
-            }
-
-            // Activate the clicked tab and button
-            document.getElementById(tabId).classList.add("tab-more-hotel-active");
-            element.classList.add("tab_button-hotel-active");
-        }
-    </script>
-
-
-
-
-
 </body>
 
 </html>
