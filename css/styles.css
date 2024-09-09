@@ -194,14 +194,15 @@ li {
 /* CTA Banner */
 .banner {
   position: relative;
-  height: 400px;
+  height: auto;
   background-size: cover;
   display: flex;
   align-items: center;
   color: white;
   text-align: left;
   padding-left: 50px;
-  padding-bottom: 40px;
+  padding-top:100px;
+  padding-bottom:100px;
 }
 
 .banner::before {
@@ -227,11 +228,20 @@ li {
   font-family: 'Playfair Display';
   color: #fff;
   text-align: left;
+  margin:0px;
+  margin-bottom: 30px;
 }
 
 .banner p {
-  font-size: 24px;
   margin: 10px 0;
+  font-size: 16px;
+    line-height: 158.02%;
+    font-family: Raleway;
+    color: #fff;
+    white-space: pre-wrap;
+    text-align: left;
+    display: inline-block;
+    padding-bottom:20px;
 }
 
 .banner-content {
@@ -242,6 +252,10 @@ li {
 .banner-container {
   width: 1200px;
   margin: auto;
+}
+
+.banner-container.experience{
+ padding-top: 220px;
 }
 
 .cta-button {
@@ -314,8 +328,8 @@ li {
 
 .quote-icon img {
   position: absolute;
-  top: -20px;
-  left: 20px;
+  top: -26px;
+  left: -100px;
   height: auto;
   height: 55.6px;
   opacity: 0.75;
@@ -335,6 +349,7 @@ blockquote {
   text-align: center;
   display: inline-block;
   height: 18px;
+  padding-top:30px;
 }
 
 /* Image Right and Left */
@@ -398,7 +413,6 @@ blockquote {
   width: 45%;
   position: relative;
   background-color: #262633;
-  border: 0.5px solid #262633;
   box-sizing: border-box;
   text-decoration: none;
   height: 51px;
@@ -567,6 +581,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap:50px;
 }
 
 .two-column-section h2 {
@@ -621,6 +636,22 @@ p {
     text-transform:uppercase;
 }
 
+.lovemore h3{
+    width: 123px;
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 145%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Raleway;
+    color: #262633;
+    text-align: center;
+    display: inline-block;
+    height: 58px;
+}
+
+
 /* Hero Section */
 
 .hero-bg {
@@ -671,8 +702,6 @@ p {
   margin-top: -60px;
 }
 
-
-
 .main-description {
   width: 527px;
   position: relative;
@@ -697,7 +726,21 @@ p {
       display: inline-block;
       color:white;
  }
+
+ .main-description.seemore p {
+    position: relative;
+    font-size: 16px;
+    line-height: 158.02%;
+    font-family: Raleway;
+    display: inline-block;
+    color:white;
+    padding-bottom:30px;
+}
   
+.main-description.seemore{
+    width:702px;
+    padding-bottom:30px;
+}
 
 .image-layout {
     display: flex;
@@ -727,6 +770,19 @@ p {
 
 .image-half {
     flex: 1;
+}
+
+p.seemore-label{
+    width: 147px;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 145%;
+    font-weight: 600;
+    font-family: Raleway;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
 }
 
 @media (max-width: 768px) {
@@ -955,6 +1011,11 @@ p {
     height:410px;
   }
 
+
+  .blue-container.mobile.lovemore{
+    height:600px;
+  }
+
   .main-title {
     margin: 0;
     font-size: 55px;
@@ -1134,6 +1195,39 @@ h1.main-title.title-image{
 .column.column-icons {
     margin: 20px;
     margin-top:0;
+}
+.quote-icon img {
+        position: absolute;
+        top: -26px;
+        left: 20px;
+        height: auto;
+        height: 55.6px;
+        opacity: 0.75;
+ }
+
+ .testimonial-author p {
+    font-size: 16px;
+    line-height: 158.02%;
+    font-family: Raleway;
+    color: #262633;
+    text-align: center;
+    display: inline-block;
+    height: 18px;
+    padding-top:30px;
+  }
+
+  .main-description.seemore{
+    width:100%;
+    padding-bottom:30px;
+}
+
+.banner-container.experience{
+    padding-top: 100px;
+   }
+
+ .banner h2.experience{
+    font-size:42px;
+    }
   
 .line-break {
     display: none;
